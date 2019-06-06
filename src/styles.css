@@ -252,6 +252,7 @@ footer .footer_discl {
 .match_block .match_wrapper .match_top,
 .match_block .match_wrapper .match_bottom {
   display: flex;
+  flex-grow: 1;
 }
 .match_block .match_wrapper .match_bottom {
   margin-top: 5px;
