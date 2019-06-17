@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import Stripes from "../../Resources/images/stripes.png";
+import Stripes from "../../Resources/images/stripes.png";
 import { Tag } from "../../ui/misc";
 
 class MeetPlayers extends Component {
@@ -9,7 +9,7 @@ class MeetPlayers extends Component {
     return (
       <div
         className="home_meetplayers"
-        //style={{ background: `#fff /*url(${Stripes})*/` }}
+        style={{ background: `#fff url(${Stripes})` }}
       >
         <div className="container">
           <div className="home_meetplayers_wrapper">
