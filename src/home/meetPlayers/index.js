@@ -17,7 +17,6 @@ class MeetPlayers extends Component {
           this.setState({
             show: true
           });
-          console.log("reveal");
         }}
       >
         <div
