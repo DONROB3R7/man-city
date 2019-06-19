@@ -1,19 +1,24 @@
 import React from "react";
 
-const renderTemplate = props => {
-  let formTemplate = null;
+const FormField = ({ formdata, id }) => {
+  const renderTemplate = props => {
+    let formTemplate = null;
 
-  /*switch (formdata.element) {
-    case "input":
-      formTemplate = <div>Input with something</div>;
-      break;
-    default:
-      formTemplate = null;
-  }*/
-  return formTemplate;
-};
+    switch (formdata.element) {
+      case "input":
+        formTemplate = (
+          <div>
+            <input {...formdata.config} value={formdata.value} />
+          </div>
+        );
+        break;
+      default:
+        formTemplate = null;
+    }
 
-const FormField = props => {
+    return formTemplate;
+  };
+
   return <div>{renderTemplate()}</div>;
 };
 
