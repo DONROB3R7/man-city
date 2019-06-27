@@ -38,8 +38,6 @@ class Enroll extends Component {
 
     newFormdata[element.id] = newElemment;
 
-    console.log(newFormdata);
-
     this.setState({
       formdata: newFormdata,
       formError: false
