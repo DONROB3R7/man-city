@@ -8,6 +8,7 @@ import PublicRoute from "./Componets/authRoutes/publicRoutes";
 import Home from "../src/home";
 import SignIn from "../src/signin";
 import Dashboard from "./admin/Dashboard";
+import AdminMatches from "./admin/matches";
 
 const Routes = props => {
   return (
@@ -18,6 +19,12 @@ const Routes = props => {
           path="/dashboard"
           exact
           component={Dashboard}
+        />
+        <PrivateRoute
+          {...props}
+          path="/admin_matches"
+          exact
+          component={AdminMatches}
         />
         <PublicRoute
           {...props}
